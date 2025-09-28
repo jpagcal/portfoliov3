@@ -1,0 +1,65 @@
+/*
+* Custom vars
+*/
+
+:root {
+  --font-properties: normal 16px "Geist";
+  --light-mode-bg: #FFF;
+  --dark-mode-bg: #222222;
+  --light-mode-blue: #0051ff;
+  --dark-mode-blue: #739fff;
+  --standard-l-spacing: -0.02rem
+}
+/*
+* set all margin and padding to 0
+*
+*/
+* {
+  font: var(--font-properties);
+  color: #222;
+  letter-spacing: var(--standard-l-spacing);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-mode-bg);
+  justify-self: center;
+  width: 100%;
+  height: 100%
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 1080px;
+  align-items: center;
+  padding: 10rem 4rem;
+  gap: 24px
+}
+
+/*
+* Header styles
+*/
+.container-name-pos {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  align-self: flex-start;
+  gap: 4px;
+}
+
+#name {
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+#pos {
+  font-size: 1rem
+}
+
+.blue-bolded {
+  color: var(--light-mode-blue);
+  font-weight: 500;
+}
