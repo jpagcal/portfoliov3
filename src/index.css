@@ -34,8 +34,8 @@ body {
   flex-direction: column;
   width: 1080px;
   align-items: center;
-  padding: 10rem 4rem;
-  gap: 24px
+  padding: 10rem;
+  gap: 16px
 }
 
 /*
@@ -63,4 +63,46 @@ body {
 .blue-bolded {
   color: var(--light-mode-blue);
   font-weight: 500;
+}
+
+/*
+* Nav styles
+*/
+.container-nav-projectSwitcher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: fit-content;
+}
+
+.container-projectSwitcher {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: fit-content;
+  height: 100%;
+
+  gap: 8px;
+}
+
+.project-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.25rem 0.5rem;
+
+  background-color: transparent;
+  border-width:1.5px;
+  border-radius: 4px;
+  border-color: black;
+  transition: all 100ms linear;
+}
+
+.project-switcher:hover {
+  color: #FFF;
+  background-color: black;
 }
