@@ -3,6 +3,9 @@ import Project from "./Project";
 export interface IProject {
 	displayText: string;
 	subText: string;
+	stackList: string[];
+	github: string | null;
+	description: string | null;
 }
 
 interface ProjectsProps {

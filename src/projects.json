@@ -1,0 +1,30 @@
+[
+	{
+		"displayText": "Parallel Sorting by Regular Sampling Implementation",
+		"subText": "A 1993 parallel sorting algorithm implemented with the POSIX pthread API using shared-memory SPMD programming.",
+		"stackList": ["C++", "pthreads"],
+		"github": null,
+		"description": null
+	},
+	{
+		"displayText": "Net++",
+		"subText": "A C++ library providing class-based encapsulation over the POSIX sockets API for a cleaner interface and automatic resource management.",
+		"stackList": ["C++", "POSIX sockets", "libevent", "Google Test"],
+		"github": "https://github.com/jpagcal/net-plus-plus",
+		"description": null
+	},
+	{
+		"displayText": "Aircard",
+		"subText": "A mobile-based digital business card application that uses QR codes to create connections.",
+		"stackList": [
+			"Typescript",
+			"React",
+			"React Native",
+			"MariaDB",
+			"Express.js",
+			"Expo"
+		],
+		"github": "https://github.com/jpagcal/aircard",
+		"description": null
+	}
+]
