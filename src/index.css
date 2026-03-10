@@ -3,106 +3,128 @@
 */
 
 :root {
-  --font-properties: normal 16px "Geist";
-  --light-mode-bg: #FFF;
-  --dark-mode-bg: #222222;
-  --light-mode-blue: #0051ff;
-  --dark-mode-blue: #739fff;
-  --standard-l-spacing: -0.02rem
+	--font-properties: normal 16px "Geist";
+	--light-mode-bg: #fff;
+	--dark-mode-bg: #222222;
+	--light-mode-blue: #0051ff;
+	--dark-mode-blue: #739fff;
+	--standard-l-spacing: -0.02rem;
 }
 /*
 * set all margin and padding to 0
 *
 */
 * {
-  font: var(--font-properties);
-  color: #222;
-  letter-spacing: var(--standard-l-spacing);
-  margin: 0;
-  padding: 0;
+	font: var(--font-properties);
+	color: #222;
+	letter-spacing: var(--standard-l-spacing);
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background-color: var(--light-mode-bg);
-  justify-self: center;
-  width: 100%;
-  height: 100%
+	background-color: var(--light-mode-bg);
+	justify-self: center;
+	width: 100%;
+	height: 100%;
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
-  width: 1080px;
-  align-items: center;
-  padding: 10rem;
-  gap: 16px
+	display: flex;
+	flex-direction: column;
+	justify-self: center;
+	width: 800px;
+	align-items: center;
+	padding: 10rem;
+	gap: 16px;
 }
 
 /*
 * Header styles
 */
 .container-name-pos {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  height: fit-content;
-  align-self: flex-start;
-  gap: 4px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 12px;
+	width: fit-content;
+	height: fit-content;
+	align-self: flex-start;
+	gap: 4px;
 }
 
 #name {
-  font-size: 2.25rem;
-  font-weight: 500;
+	font-size: 2.25rem;
+	font-weight: 500;
 }
 
 #pos {
-  font-size: 1rem;
-  font-weight: 400;
+	font-size: 1rem;
+	font-weight: 400;
 }
 
 .blue-bolded {
-  color: var(--light-mode-blue);
-  font-weight: 500;
+	color: var(--light-mode-blue);
+	font-weight: 500;
 }
 
 /*
 * Nav styles
 */
-.container-nav-projectSwitcher {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 100%;
-  height: fit-content;
+.container-nav {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+}
+.container-nav-links {
+	display: flex;
+	padding-left: 12px;
+	flex-direction: column;
+	gap: 4px;
+	align-items: flex-start;
 }
 
-.container-projectSwitcher {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
-  width: fit-content;
-  height: 100%;
-
-  gap: 8px;
+.link-text {
+	color: royalblue;
+	text-decoration: none;
+	transition: linear 150ms;
 }
 
-.project-switcher {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 0.25rem 0.5rem;
-
-  background-color: transparent;
-  border-width:1.5px;
-  border-radius: 4px;
-  border-color: black;
-  transition: all 100ms linear;
+.link-text:hover {
+	color: #222;
 }
 
-.project-switcher:hover {
-  color: #FFF;
-  background-color: black;
+/*
+* Project styles
+*/
+.container-projects {
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: fit-content;
+	align-items: flex-start;
+}
+
+.project {
+	padding: 12px 0px 12px 12px;
+	width: 100%;
+	border-bottom: solid 1px;
+	transition: linear 75ms;
+}
+
+.project:hover {
+	cursor: pointer;
+	background-color: #222;
+	color: white;
+}
+
+.project-header {
+	color: inherit;
+	font: normal 24px "Geist";
+}
+
+.project-subtext {
+	margin-top: 4px;
+	color: slategray;
+	font: normal 14px "Geist";
 }
