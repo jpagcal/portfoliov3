@@ -109,13 +109,12 @@ body {
 	padding: 12px 0px 12px 12px;
 	width: 100%;
 	border-bottom: solid 1px;
-	transition: linear 75ms;
+	transition: ease-out 250ms;
 }
 
 .project:hover {
 	cursor: pointer;
-	background-color: #222;
-	color: white;
+	background-color: #dffeff;
 }
 
 .project-header {
@@ -127,4 +126,62 @@ body {
 	margin-top: 4px;
 	color: slategray;
 	font: normal 14px "Geist";
+}
+
+.project-details {
+	display: flex;
+	width: 100%;
+	height: 0;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+	transition: all ease-out 250ms;
+	overflow: hidden;
+}
+
+.project:hover .project-details {
+	height: 64px;
+}
+
+.stack-tag {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-color: #222;
+	width: fit-content;
+	height: fit-content;
+	padding: 4px 12px;
+	border-radius: 4px;
+	font: 12px "Geist";
+}
+
+.stack-list {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	gap: 4px;
+}
+
+.github-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	margin-right: 12px;
+	padding: 12px 24px;
+	background-color: #2b3137;
+	color: white;
+	font: 14px "Geist";
+	font-weight: 500;
+
+	text-align: center;
+	text-decoration: none;
+	border-radius: 8px;
+	transition: ease-out 250ms;
+}
+
+.github-link:hover {
+	border-radius: 0px;
 }

@@ -15,8 +15,8 @@ interface ProjectsProps {
 const Projects = ({ projectsList }: ProjectsProps) => {
 	return (
 		<section className="container-projects">
-			{projectsList.map(({ displayText, subText }) => (
-				<Project displayText={displayText} subText={subText} />
+			{projectsList.map((project) => (
+				<Project project={project} />
 			))}
 		</section>
 	);
