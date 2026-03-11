@@ -1,6 +1,6 @@
 import type { IProject } from "./Projects";
 import StackTag from "./StackTag";
-import githubSRC from "../icons/GitHub_Invertocat_White.svg";
+import githubSRC from "../icons/GitHub_Invertocat_Black.svg";
 
 interface ProjectProps {
 	project: IProject;
@@ -26,7 +26,7 @@ const Project = ({
 							style={{
 								font: "16px Geist",
 								fontWeight: 500,
-								color: "white",
+								color: "#222",
 							}}
 						>
 							Github

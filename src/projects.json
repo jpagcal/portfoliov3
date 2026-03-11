@@ -1,16 +1,16 @@
 [
 	{
-		"displayText": "Parallel Sorting by Regular Sampling Implementation",
-		"subText": "A 1993 parallel sorting algorithm implemented with the POSIX pthread API using shared-memory SPMD programming.",
-		"stackList": ["C++", "pthreads"],
-		"github": null,
-		"description": null
-	},
-	{
 		"displayText": "Net++",
 		"subText": "A C++ library providing class-based encapsulation over the POSIX sockets API for a cleaner interface and automatic resource management.",
 		"stackList": ["C++", "POSIX sockets", "libevent", "Google Test"],
 		"github": "https://github.com/jpagcal/net-plus-plus",
+		"description": null
+	},
+	{
+		"displayText": "Parallel Sorting by Regular Sampling Implementation",
+		"subText": "A 1993 parallel sorting algorithm implemented with the POSIX pthread API using shared-memory SPMD programming.",
+		"stackList": ["C++", "pthreads"],
+		"github": null,
 		"description": null
 	},
 	{
@@ -25,6 +25,13 @@
 			"Expo"
 		],
 		"github": "https://github.com/jpagcal/aircard",
+		"description": null
+	},
+	{
+		"displayText": "Moodly",
+		"subText": "An android application that allows users to post based on what they're feeling.",
+		"stackList": ["Java", "Android Studio", "Firebase"],
+		"github": "https://github.com/cmput301-w25/project-tangclan",
 		"description": null
 	}
 ]

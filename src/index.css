@@ -71,22 +71,36 @@ body {
 * Nav styles
 */
 .container-nav {
+	margin-top: -4px;
+	align-self: flex-start;
 	display: flex;
-	width: 100%;
+	margin-left: 12px;
+	width: fit-content;
 	justify-content: flex-start;
+	border-radius: 24px;
 }
+
 .container-nav-links {
 	display: flex;
-	padding-left: 12px;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	gap: 4px;
-	align-items: flex-start;
 }
 
 .link-text {
 	color: royalblue;
 	text-decoration: none;
 	transition: linear 150ms;
+}
+
+.link-icon {
+	display: flex;
+	width: fit-content;
+	height: fix-content;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
 }
 
 .link-text:hover {
@@ -97,7 +111,6 @@ body {
 * Project styles
 */
 .container-projects {
-	margin-top: 16px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -113,8 +126,7 @@ body {
 }
 
 .project:hover {
-	cursor: pointer;
-	background-color: #dffeff;
+	background-color: #f1f1f1;
 }
 
 .project-header {
@@ -135,11 +147,15 @@ body {
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: space-between;
-	transition: all ease-out 250ms;
+	transition:
+		opacity ease-out 450ms,
+		height ease-out 250ms;
+	opacity: 0;
 	overflow: hidden;
 }
 
 .project:hover .project-details {
+	opacity: 1;
 	height: 64px;
 }
 
@@ -147,13 +163,13 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: white;
-	background-color: #222;
+	color: #222;
 	width: fit-content;
 	height: fit-content;
 	padding: 4px 12px;
+	border: 1px solid #222;
 	border-radius: 4px;
-	font: 12px "Geist";
+	font: 400 12px "Geist";
 }
 
 .stack-list {
@@ -170,16 +186,18 @@ body {
 	justify-content: center;
 	gap: 4px;
 	margin-right: 12px;
-	padding: 12px 24px;
-	background-color: #2b3137;
-	color: white;
-	font: 14px "Geist";
+	margin-bottom: 2px;
+	padding: 4px 8px;
+	color: #222;
+	font: 550 14px "Geist";
 	font-weight: 500;
 
 	text-align: center;
 	text-decoration: none;
 	border-radius: 8px;
+	border: 2px solid #222;
 	transition: ease-out 250ms;
+	box-shadow: #222 2px 2px;
 }
 
 .github-link:hover {
