@@ -7,7 +7,7 @@ interface ProjectProps {
 }
 
 const Project = ({
-	project: { displayText, subText, stackList, github, description },
+	project: { displayText, subText, stackList, github },
 }: ProjectProps) => {
 	return (
 		<div className="project">
