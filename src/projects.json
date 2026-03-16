@@ -33,5 +33,12 @@
 		"stackList": ["Java", "Android Studio", "Firebase"],
 		"github": "https://github.com/cmput301-w25/project-tangclan",
 		"description": null
+	},
+  {
+		"displayText": "Knead a Job",
+		"subText": "An batteries-included job application tracker that comes with resume management and AI-assisted match analysis",
+		"stackList": ["Python", "Django", "JavaScript", "React", "HTML", "CSS"],
+		"github": "https://github.com/Rikh-Mukj/Knead-a-Job",
+		"description": null
 	}
 ]
